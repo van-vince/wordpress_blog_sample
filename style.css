@@ -1,0 +1,264 @@
+
+/*
+Theme Name: wp_template
+Theme URI: https://vvstechnologies.net/themes/twentytwenty/
+Author: vvstech team
+Author URI: https://vvstechnologies.net/
+Description: A classic theme designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wptheme
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/* Import css files */
+@import url(./assets/css/_variables.css);
+
+/* Import global css files */
+@import url(./assets/css/_global.css);
+
+/* Import grid_css file */
+@import url(./assets/css/_grid.css);
+
+/* Import header css */
+@import url(./assets/css/header.css);
+
+
+html, body{
+    height:100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font: normal 900 1rem var(--font-Rale);
+}
+
+/* Banner Area */
+.main-area .banner-area .banner{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.main-area .banner-area .banner-tittle {
+    height: 100%;
+    width: 100%;
+    max-height: 100px;
+    padding-top: 170px;
+    padding-bottom: 6rem;
+    font: normal 800 1.5rem/1rem var(--font-mont);
+}
+
+.main-area .categories{
+    padding: 3rem 0;
+}
+
+.main-area .categories a > span{
+    border: 1px solid var(--light);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 1.5rem;
+    background: var(--light);
+    box-shadow: var(--box-shadow2);
+    color: var(--gray);
+    transition: all .5s ease;
+}
+
+.main-area .categories a:hover > span,
+.main-area .categories a:focus > span{
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light);
+    box-shadow: none;
+
+}
+
+/* Post area section */
+.main-area .post-area{
+    margin: 0 5%;
+}
+
+.main-area .post-area .grid{
+    column-count: 2;
+}
+
+.main-area .post-area .article{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    width: auto;
+    display: inline-block;
+}
+.main-area .post-area .article img{
+    height: 300px;
+}
+
+.main-area article.blog-post{
+    box-shadow: var(--box-shadow3);
+    border: 1px solid var(--border);
+    transition: box-shadow .7s ease;
+}
+
+.main-area article.blog-post:hover{
+    box-shadow: none;
+}
+
+.main-area article.blog-post .post-info{
+    padding: 2rem;
+}
+
+.main-area article.blog-post .post-info .post-title{
+    padding: 1rem 0;
+}
+
+.main-area article.blog-post .post-info hr{
+    margin-top: 1rem;
+    background: var(--gray);
+}
+
+
+/* sidebar area */
+aside.sidebar .latest-post .new-post{
+    border: 1px solid var(--border);
+    padding: 5% 0;
+    max-height: 9rem;
+}
+
+aside.sidebar .latest-post a.title{
+    padding-bottom: 10px;
+    padding: 5%;
+}
+
+/*
+aside.sidebar .latest-post .new-post .post-image,
+aside.sidebar .latest-post .new-post .post-title{
+    padding: 0 2rem;
+} 
+
+aside.sidebar .latest-post .new-post .post-title{
+    padding: 2rem;
+}
+*/
+
+aside.sidebar .latest-post .new-post .post-image img{
+    border-radius: 3rem;
+}
+
+/* search area */
+aside.sidebar .search-area{
+    padding: 5rem 0;
+    padding-left: 2rem;
+}
+
+aside.sidebar .search-area .search .form-group{
+    width: 237px;
+    box-shadow: var(--box-shadow2);
+
+}
+
+
+/* popular tags */
+aside.sidebar .popular-tags,
+footer.footer-area .popular-tags{
+    padding: 4rem 0;
+}
+
+aside.sidebar .popular-tags a,
+footer.footer-area .popular-tags a {
+    margin: 1.3rem 0;
+}
+
+aside.sidebar .popular-tags a span,
+footer.footer-area .popular-tags a span{
+    padding: 1rem 2rem;
+    background: var(--light);
+    border-radius: 50px;
+    margin-right: 1rem;
+    color: var(--dark);
+    transition: background .7s ease;
+
+}
+aside.sidebar .popular-tags a:hover span,
+footer.footer-area .popular-tags a:hover span {
+    background: var(--primary-color);
+    border: 1px solid var(--border);
+    color: var(--light);
+
+}
+
+
+/* pagination section */
+.main-area .pagination{
+    background: var(--light);
+    margin: 2rem 0;
+    display: inline-block;
+    padding: 1rem .7rem;
+    border-radius: 50px;
+   
+}
+
+.main-area .pagination a, .pagination span{
+    padding: .6rem 1rem;
+    border-radius: 45px;
+}
+
+.main-area .pagination a:hover{
+    background: var(--primary-color);
+}
+
+/* footer area */
+
+footer.footer-area{
+    background: var(--dark);
+    padding: 1% 10% ;
+}
+
+footer.footer-area > .row {
+    padding: 5% 0;
+}
+
+footer.footer-area p.para,
+footer.footer-area .social-media,
+footer.footer-area .recent-post,
+footer.footer-area .popular-tags{
+    padding-left: 1.5rem;
+    padding-top: .9rem;
+}
+
+footer.footer-area .social-media a{
+    padding-right: 1rem;
+}
+
+footer.footer-area .recent-post .column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0%;
+
+}
+footer.footer-area .recent-post .post{
+    padding-top: .9rem;
+}
+
+footer.footer-area .popular-tags a span{
+    padding: .8rem 1rem;
+}
+
+
+/*Single post template styling */
+.post-area .single-post .post-title{
+    padding: 2rem 0;
+}
+
+/* Seperate nav-color styling */
+header.header-area .nav-color{
+    background: var(--dark);
+}

@@ -1,0 +1,93 @@
+
+/*** Media for viewport 0px and above ***/
+
+@media(min-width: 0px){
+    .main-area .banner-area .banner img{
+       height: 21rem; 
+    }
+    .main-area .categories a{
+        margin: 1rem 0;
+    }
+    .main-area .post-area{
+        max-width: 0 5px;
+    }
+    .main-area .post-area .col-8-lg .grid{
+        column-count: auto;
+    }
+    aside.sidebar .latest-post .new-post .post-image{
+        width: 30%;
+    }
+    footer.footer-area > .row div {
+        padding-top: 5%;
+    }
+}
+
+/*** Media for viewport 576-px and above ***/
+
+@media(min-width: 576px){
+    .main-area .banner-area .banner img{
+       height: 21rem; 
+    }
+    .main-area .post-area{
+        max-width: 0 10px;
+    }
+    
+    aside.sidebar .latest-post .new-post .post-image{
+        width: 30%;
+    }
+
+}
+
+/*** Media for viewport 768-px and above ***/
+
+@media(min-width: 768px){
+    .main-area .post-area .col-8-lg .grid{
+        column-count: 2;
+    }
+    .main-area .post-area{
+        max-width: 0 10px;
+    }
+    
+    aside.sidebar .latest-post .new-post .post-image{
+        width: 20%;
+    }
+
+    aside.sidebar .latest-post .new-post{
+        column-count: 2;
+    }
+
+}
+
+/*** Media for viewport 1040-px and above ***/
+
+@media(min-width: 1024px){
+    .main-area .banner-area .banner img{
+        height: 23rem;
+    }
+    aside.sidebar .latest-post .new-post{
+        column-count: auto;
+    }
+}
+
+/*** Media for viewport 1200-px and above ***/
+
+@media(min-width: 1200px){
+    .main-area .banner-area .banner img{
+        height: auto;
+    }
+    aside.sidebar .latest-post .new-post{
+        column-count: auto;
+    }
+}
+
+@media(min-width: 2560px){
+    .main-area .banner-area .banner img{
+        height: 20rem;
+    }
+    aside.sidebar .latest-post .new-post{
+        column-count: auto;
+    }
+    aside.sidebar .latest-post .new-post .post-image{
+        width: 20%;
+    }
+}
